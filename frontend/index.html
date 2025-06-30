@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deadline Buddy</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2329/2329078.png">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>📅 Deadline Buddy</h1>
+
+    <form id="taskForm">
+      <div class="form-card">
+        <div class="form-group">
+          <label>Title</label>
+          <input type="text" id="title" required>
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <input type="text" id="description" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Deadline</label>
+            <input type="date" id="deadline" required>
+          </div>
+          <div class="form-group">
+            <label>Estimated Hours</label>
+            <input type="number" id="estimatedHours" min="1" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Motivation Style</label>
+          <select id="motivationStyle">
+            <option value="funny">Funny</option>
+            <option value="strict">Strict</option>
+            <option value="soft">Soft</option>
+          </select>
+        </div>
+        <button type="submit" class="primary-btn">Create Task</button>
+      </div>
+    </form>
+
+    <p id="responseMsg"></p>
+
+    <section class="task-section">
+      <h2>Your Tasks</h2>
+      <div id="taskList"></div>
+    </section>
+
+    <section class="reminder-section">
+      <h3 class="reminder-heading">🛎 INITIATING REMINDER SEQUENCE...</h3>
+      <p class="reminder-msg">🤖 BEEP BOOP! TIME TO FOCUS!</p>
+    </section>
+  </div>
+
+  <audio id="reminderAudio" src="beep.mp3" preload="auto"></audio>
+  <script src="app.js"></script>
+</body>
+</html>

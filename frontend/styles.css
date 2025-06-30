@@ -1,0 +1,227 @@
+/* --- FONTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Nunito:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo 2', cursive;
+  background: linear-gradient(to bottom right, #cce5ff, #a3d5ff);
+  color: #002e5d;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #ffffffcc;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Baloo 2', cursive;
+  font-size: 3rem;
+  color: #004488;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: 'Baloo 2', cursive;
+  font-size: 1.8rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #004488;
+}
+
+.form-card {
+  background: #e6f2ff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #003366;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #b3d9ff;
+  background-color: #f0f8ff;
+  font-family: 'Nunito', sans-serif;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #66b3ff;
+  box-shadow: 0 0 8px #99ccff88;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.primary-btn {
+  background-color: #3399ff;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+}
+
+.primary-btn:hover {
+  background-color: #0077e6;
+}
+
+#responseMsg {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.task-section {
+  margin-top: 20px;
+}
+
+.task-card {
+  background: #e6f2ff;
+  padding: 20px;
+  border-radius: 18px;
+  border: 2px solid #b3d9ff;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.task-card h3 {
+  margin-top: 0;
+  color: #0056b3;
+  font-family: 'Baloo 2', cursive;
+  font-size: 1.4rem;
+}
+
+.task-card p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #003366;
+}
+
+.session-container {
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: 0.9rem;
+  color: #004080;
+}
+
+.session-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.session-container li {
+  background: #dbefff;
+  margin-bottom: 5px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid #99ccff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  border-radius: 20px;
+  background: #d0eaff;
+  margin: 8px 0 12px;
+}
+
+.progress {
+  height: 100%;
+  background: #3399ff;
+  border-radius: 20px;
+  transition: width 0.4s ease-in-out;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  font-size: 0.9rem;
+  margin-top: -2px;
+}
+
+.delete-btn:hover {
+  background-color: #e60000;
+}
+
+.reminder-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #d6f0ff;
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'Baloo 2', cursive;
+}
+
+.reminder-heading {
+  font-size: 1.1rem;
+  color: #004488;
+  margin-bottom: 10px;
+}
+
+.reminder-message {
+  display: none;
+}
+
+.reminder-box {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #cce6ff;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
+  color: #004080;
+  box-shadow: 0 0 8px #99ccff;
+}
+
+.reminder-msg {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #003366;
+}
+
+@keyframes fillGrow {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.progress {
+  animation: fillGrow 1s ease-in-out;
+}
