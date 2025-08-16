@@ -52,19 +52,19 @@ java Main
 
 Access the app locally (via CLI or basic web interface depending on version).
 
-🔮 Future Scope
+## 🔮 Future Scope
 - Smart notifications (desktop/mobile/email reminders)
 - Analytics dashboard (time spent, productivity score)
 - Cloud deployment on AWS/Azure
 - Mobile app integration (Android/iOS)
 - Team collaboration features
 
-🎯 Why This Project Matters (Internship Perspective)
+## 🎯 Why This Project Matters (Internship Perspective)
 - Demonstrates ability to identify real-world problems and create software solutions
 - Showcases Java programming, SQL, and backend development skills
 - Includes clean code practices, cascading deletes, and error handling to ensure robustness
 - Highlights scalable design thinking — starting small but structured for future growth
 - Reflects a problem-solving mindset: focusing not just on code, but on user needs and practical impact
 
-🤝 Contribution
+## 🤝 Contribution
 Feel free to fork the repo and suggest improvements via pull requests!
