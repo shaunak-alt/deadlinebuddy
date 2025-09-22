@@ -59,7 +59,7 @@ Access the app locally (via CLI or basic web interface depending on version).
 - Mobile app integration (Android/iOS)
 - Team collaboration features
 
-## 🎯 Why This Project Matters (Internship Perspective)
+## 🎯 Why This Project Matters
 - Demonstrates ability to identify real-world problems and create software solutions
 - Showcases Java programming, SQL, and backend development skills
 - Includes clean code practices, cascading deletes, and error handling to ensure robustness
